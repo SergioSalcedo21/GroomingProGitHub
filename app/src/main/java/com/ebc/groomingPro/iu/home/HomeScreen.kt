@@ -63,6 +63,12 @@ fun HomeScreen (navController: NavController){
 
         )
 
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Button(onClick = {navController.navigate("tipo_cambio")}) {
+            Text("Ir a tipo de cambio")
+        }
+
     }
 
 

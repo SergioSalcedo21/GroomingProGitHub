@@ -1,7 +1,6 @@
 package com.ebc.groomingPro.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavHost
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -9,6 +8,7 @@ import com.ebc.groomingPro.iu.citasLista.CitasScreen
 import com.ebc.groomingPro.iu.crear.CrearScreen
 import com.ebc.groomingPro.iu.detalleCitas.DetalleCitaScreen
 import com.ebc.groomingPro.iu.home.HomeScreen
+import com.ebc.groomingPro.iu.tipocambio.TipoDeCambioScreen
 
 
 @Composable
@@ -45,6 +45,11 @@ fun AppNavigation(){
                 nombreMascota = nombreMascota,
                 servicio = servicio
             )
+        }
+        
+        composable (route = "tipo_cambio"){
+            TipoDeCambioScreen()
+
         }
 
 
